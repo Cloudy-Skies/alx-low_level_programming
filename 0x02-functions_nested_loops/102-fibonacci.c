@@ -1,27 +1,28 @@
 #include <stdio.h>
 
 /**
- * main - a program to print the first 50 fibonacci numbers
+ * main - Entry point
  *
- * Returns: Always success (0)
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
+	int i;
+	long int fibonacci[50];
 
-
-	fib[0] = 1;
-	fib[1] = 2;
+	fibonacci[0] = 1;
+	fibonacci[1] = 2;
+	printf("%ld, %ld, ", fibonacci[0], fibonacci[1]);
 
 	for (i = 2; i < 50; i++)
 	{
-		fib[i] = fib[i - 1] + fib[i - 2];
+		fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+		if (i == 49)
+			printf("%ld\n", fibonacci[i]);
+		else
+			printf("%ld, ", fibonacci[i]);
 	}
-
-	for (i = 0; i < 49; i++)
-	{
-		printf("%ld, ", fib[i]);
-	}
-	printf("%ld\n", fib[49]);
 
 	return (0);
 }
