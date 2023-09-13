@@ -7,8 +7,7 @@
  */
 int main(void)
 {
-	long int fib[50];
-	int i;
+
 
 	fib[0] = 1;
 	fib[1] = 2;
@@ -20,9 +19,9 @@ int main(void)
 
 	for (i = 0; i < 49; i++)
 	{
-		printf("%d, ", fib[i]);
+		printf("%ld, ", fib[i]);
 	}
-	printf("%d\n", fib[49]);
+	printf("%ld\n", fib[49]);
 
 	return (0);
 }
