@@ -5,4 +5,5 @@ int _isupper(int c);
 void print_numbers(void);
 int _isdigit(int c);
 int mul(int a, int b);
+void print_numbers(void);
 #endif
